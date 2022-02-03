@@ -1,0 +1,5 @@
+The main purpose of this application is to allow companies and idividuals to generate documents including invoices with high encryption standards. 
+            Indeed, only the person who has knowledge about the key, can view the documents. <br>Behind the scenes a Feistel algorithm is working to encrypt and decrypt your documents. 
+            While we do not keep any copy of your keys, you can always regenerate a new one and receive an email as a reminder. <br>
+            You can forward the email (Qr code + key) to the the concerned person/entity ,so that, he/she/they could view it and download it.<br>Remark:
+<strong> Our encryption algorithm supports numbers and lowercase characters. In case you could not access your document with your key, you can always browse documents/invoices and "regenerate a key".</strong>
