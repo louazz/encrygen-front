@@ -78,7 +78,7 @@ var divContents = window.$("#capture").html();
       printWindow.document.write('	<link rel="stylesheet" href="/normalize.css"> <link rel="stylesheet" href="/skeleton.css">')
       printWindow.document.write('</head><body ><div class="container">');
       printWindow.document.write(divContents);
-      printWindow.document.write('</div></body></html>');
+      printWindow.document.write('</div><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></body></html>');
       printWindow.document.close();
       let p=new Promise(resolve => setTimeout(resolve, 400));
       await p;
