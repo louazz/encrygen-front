@@ -2,7 +2,7 @@
   "name": "encrygen",
   "version": "0.0.1",
   "scripts": {
-    "start":"node build/index.js",
+    "start": "node build/index.js",
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
@@ -33,5 +33,8 @@
     "tslib": "^2.3.1",
     "typescript": "^4.4.3"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "svelte-scrollto": "^0.2.0"
+  }
 }

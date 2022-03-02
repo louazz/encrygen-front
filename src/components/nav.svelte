@@ -3,6 +3,7 @@
     import{token, checker} from "../stores/useToken"
 	import Icon from "./icon.svelte";
 	import { browser } from "$app/env"
+	import * as animateScroll from "svelte-scrollto";
     const logout= ()=> {
         if(browser){
 			localStorage.clear()
@@ -12,10 +13,11 @@
 	const clicked= ()=> {
 		if ($checker==true){
 			checker.set(false)
+			animateScroll.scrollToBottom()
 		}else{
 			checker.set(true)
+			animateScroll.scrollToBottom()
 		}
-
 	}
 </script>
 <br>
@@ -30,9 +32,9 @@
     {#if  $token==null}
 
 	{#if $checker==false}
-	<center><button class="button" on:click={clicked} >Login</button></center>
+	<center><button class="button" href="#pointer"  on:click={clicked} >Login</button></center>
 {:else}
-<center><button class="button-primary" on:click={clicked} >Sign Up</button></center>
+<center><button class="button-primary" href="#pointer"  on:click={clicked} >Sign Up</button></center>
 {/if}
 	
     {:else}
@@ -44,7 +46,7 @@
 			<center><Icon name= "profile"/> <br><strong>Step 1: </strong><em>Configure your profile; those data will be displayed on generated documents</em></center><br>
 		</div>
 		<div class="one-third column">
-			<center><Icon name= "docs"/> <br><strong>Step 2: </strong><em>Generate documents including incoices and receive an email with your key and Qr code</em></center><br>
+			<center><Icon name= "docs"/> <br><strong>Step 2: </strong><em>Generate documents including invoices and receive an email with your key and Qr code</em></center><br>
 		</div>
 		<div class="one-third column">
 			<center><Icon name= "Qr"/><br><strong>Step 3: </strong><em>Verify shared or owned documents by scanning the Qr code and entering the key</em></center>

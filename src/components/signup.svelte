@@ -41,7 +41,7 @@ import{token, profile, id} from "../stores/useToken"
 <center><h1>Sign up</h1></center>
 <hr>
 <form on:submit|preventDefault>
-  <div class="row">
+  <div class="row" id="pointer">
     <div class="six columns">
       <label for="exampleEmailInput">Your email</label>
       <input bind:value={email}  class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">

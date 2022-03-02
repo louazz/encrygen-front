@@ -12,6 +12,7 @@
               const response = await fetch('https://backend.encrygen.co.uk/api/docs/'+$id, {
          method: 'GET',
          headers: {
+          'Access-Control-Allow-Origin':'*',
            'Content-Type': 'application/json',
            'Authorization': 'Token '+$token
          },})

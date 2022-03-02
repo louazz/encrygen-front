@@ -5,6 +5,7 @@ import Login from "../components/login.svelte";
 import SignUp from "../components/signup.svelte";
 import { Moon } from 'svelte-loading-spinners'
 let p=new Promise(resolve => setTimeout(resolve, 400));
+
 </script>
 
 
@@ -17,7 +18,7 @@ let p=new Promise(resolve => setTimeout(resolve, 400));
 
 
 {:then n}
-<div class="container">
+<div class="container" >
 <Nav/>
 {#if $token==null}
 {#if $checker==true}

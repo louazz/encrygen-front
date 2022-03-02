@@ -21,6 +21,7 @@ const displayInvoice= async(key)=> {
    return await fetch('https://backend.encrygen.co.uk/api/invoices/display/'+parm, {
   method: 'POST',
   headers: {
+    'Access-Control-Allow-Origin': '*',
     'Content-Type': 'application/json',
   },
   body: JSON.stringify({
