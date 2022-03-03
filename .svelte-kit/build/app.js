@@ -5,7 +5,7 @@ import { set_paths, assets, base } from '/home/louai/build/encrygen/.svelte-kit/
 import { set_prerendering } from '/home/louai/build/encrygen/.svelte-kit/runtime/env.js';
 import * as user_hooks from "./hooks.js";
 
-const template = ({ head, body, assets, nonce }) => "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<link rel=\"icon\" href=\"/favicon.png\" />\n\t\t<link rel='stylesheet' href='/normalize.css'>\n\t\t<link rel='stylesheet' href='/skeleton.css'>\n\t\t\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n\t\t\n\t\t" + head + "\n\t</head>\n\t<body>\n\t\t<div id=\"svelte\">" + body + "</div>\n\t\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\"></script>\n\t\t<script src=\"/js/my.js\"></script>\n\t</body>\n</html>\n";
+const template = ({ head, body, assets, nonce }) => "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<link rel=\"icon\" href=\"/favicon.png\" />\n\t\t<link rel='stylesheet' href='/normalize.css'>\n\t\t<link rel='stylesheet' href='/skeleton.css'>\n\t\t\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n\t\t\n\t\t" + head + "\n\t</head>\n\t<body >\n\t\t<div id=\"svelte\" >" + body + "</div>\n\t\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\"></script>\n\t\t<script src=\"/js/my.js\">\n\t\t</script>\n\t</body>\n</html>\n";
 
 let read = null;
 

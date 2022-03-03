@@ -313,10 +313,10 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 	<center><h1>Ecry ${validate_component(Icon, "Icon").$$render($$result, { name: "gear" }, {}, {})} geN</h1></center>
 	<br>
-    ${$token == null ? `${$checker == false ? `<center><button class="${"button"}">Login</button></center>` : `<center><button class="${"button-primary"}">Sign Up</button></center>`}` : `<center><button class="${"button button-primary"}">Log out</button></center>`}
+    ${$token == null ? `${$checker == false ? `<center><button class="${"button"}" href="${"#pointer"}">Login</button></center>` : `<center><button class="${"button-primary"}" href="${"#pointer"}">Sign Up</button></center>`}` : `<center><button class="${"button button-primary"}">Log out</button></center>`}
 	<hr>
 	<div class="${"row"}"><div class="${"one-third column"}"><center>${validate_component(Icon, "Icon").$$render($$result, { name: "profile" }, {}, {})} <br><strong>Step 1: </strong><em>Configure your profile; those data will be displayed on generated documents</em></center><br></div>
-		<div class="${"one-third column"}"><center>${validate_component(Icon, "Icon").$$render($$result, { name: "docs" }, {}, {})} <br><strong>Step 2: </strong><em>Generate documents including incoices and receive an email with your key and Qr code</em></center><br></div>
+		<div class="${"one-third column"}"><center>${validate_component(Icon, "Icon").$$render($$result, { name: "docs" }, {}, {})} <br><strong>Step 2: </strong><em>Generate documents including invoices and receive an email with your key and Qr code</em></center><br></div>
 		<div class="${"one-third column"}"><center>${validate_component(Icon, "Icon").$$render($$result, { name: "Qr" }, {}, {})}<br><strong>Step 3: </strong><em>Verify shared or owned documents by scanning the Qr code and entering the key</em></center>
 			<br></div></div>
 
@@ -349,7 +349,7 @@ const Signup = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let email = "", password = "", rpassword = "", username = "";
   return `<center><h1>Sign up</h1></center>
 <hr>
-<form><div class="${"row"}"><div class="${"six columns"}"><label for="${"exampleEmailInput"}">Your email</label>
+<form><div class="${"row"}" id="${"pointer"}"><div class="${"six columns"}"><label for="${"exampleEmailInput"}">Your email</label>
       <input class="${"u-full-width"}" type="${"email"}" placeholder="${"test@mailbox.com"}" id="${"exampleEmailInput"}"${add_attribute("value", email, 0)}></div>
     <div class="${"six columns"}"><label for="${"username"}">Your username</label>
       <input class="${"u-full-width"}" type="${"text"}" placeholder="${"username"}" id="${"username"}"${add_attribute("value", username, 0)}></div></div>

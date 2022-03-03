@@ -1700,7 +1700,7 @@ const template = ({ head, body, assets: assets2, nonce }) => `<!DOCTYPE html>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		` + head + '\n	</head>\n	<body>\n		<div id="svelte">' + body + '</div>\n		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"><\/script>\n		<script src="/js/my.js"><\/script>\n	</body>\n</html>\n';
+		` + head + '\n	</head>\n	<body >\n		<div id="svelte" >' + body + '</div>\n		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"><\/script>\n		<script src="/js/my.js">\n		<\/script>\n	</body>\n</html>\n';
 let read = null;
 set_paths({ "base": "", "assets": "" });
 const get_hooks = (hooks) => ({
